@@ -56,19 +56,19 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">同行评议期间，隐藏作者</a>,<sup>*</sup></span>
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">金莫迪</a>,<sup>*</sup></span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">同行评议期间，隐藏作者</a>,</span>
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">匡航逸</a>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">同行评议期间，隐藏作者</a>,
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">刘华彬</a>,
                   </span>
                   <span class="author-block">
-                      <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">同行评议期间，隐藏作者</a>
+                      <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">张铭洲</a>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">同行评议期间，隐藏单位<br>SJMMA2025</span>
+                    <span class="author-block">南开大学<br>SJMMA2025</span>
                     <span class="eql-cntrb"><small><br><sup>*</sup>通讯作者</small></span>
                   </div>
 
@@ -87,7 +87,7 @@
 
                     <!-- Supplementary PDF link -->
                     <span class="link-block">
-                      <a href="static/pdfs/data.zip" target="_blank"
+                      <a href="static/data/data.zip" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fas fa-file-pdf"></i>
@@ -124,7 +124,7 @@
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
+        <source src="static/videos/E_IMMC25140846.mp4"
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
@@ -144,14 +144,18 @@
         <div class="content has-text-justified">
           <p>
             在国家对大江大河治理和高速公路网络建设日益重视的背景下，本文深入探讨了河道整治与高速公路修建过程中面临的复杂工程问题。针对这些问题，本文提出了一种创新的解决方案，即利用数学建模与三维重建技术，对河道开挖与高速公路边坡修建进行精确建模和优化调度。
-            
-          在任务一中，我们基于航道挖掘的勘探图数据，系统开展了三维建模与高程分析，通过数据驱动的方式解析了勘探图中的关键图层信息，重点提取了边坡设计所需的坡比参数。以航道线高程为基准高度，构建了多层级几何解析模型，通过空间坐标系转换与级联计算，精确推导了边坡线在立体空间中的Z轴坐标。为验证模型的科学性，我们还开展了多维度可视化分析，通过基于<strong>Delaunay三角剖分</strong>的边坡示意图展示空间结构，二维高程等高线图刻画高程分布规律，形成了完整的空间认知体系。
-            
-          在任务二中，聚焦高速公路边坡三维建模，以桂林外环高速 B 段边坡为对象。通过简化模型，将路段中心线近似为直线降低复杂度；构建三维空间直角坐标系，明确各轴定义及对应关系；从 CAD 图纸提取二维数据，利用参照点和工程参数，通过特定映射关系将二维坐标转换为三维坐标；采用 Delaunay 三角剖分进行空间插值，生成连续曲面，满足边坡工程分析需求。
-            
-          基于任务一和任务二的结果，我们在任务三中，首先通过读取挖高数据和截面面积数据，计算了土方挖掘的粗略体积，之后通过二重积分与立方堆积体积之差计算出了回填土方体积。在方案规划中，我们首先规范了优化问题的标准形式，之后将问题拆解为CVRP问题（带容量约束的车辆路径问题）和聚类参数与车辆数选择问题两个子问题。在处理CVRP问题时，我们采用<strong>蚁群算法</strong>对于每个类别的待挖掘区域进行最优方案求解。对于聚类参数选择和车辆数量处理这一问题，我们采用<strong>粒子群算法</strong>，将构造好的CVRP问题的求解器作为粒子群算法的适应度计算接口，进而实现全局优化，确定了对应的聚类选择参数和车辆数量。实验结果表明，当挖掘机数量为27辆，装卸点数为14，河道开挖得到最优解，时间和成本分别为447.66小时和471,984元。当挖掘机数量为25辆，装卸点数为10，边坡修建得到最优解，时间和成本分别为259.36小时和210,420.63元。
-            
-          最后，我们还对本问题进行了进一步探索。我们从计算机视觉的角度出发，探讨了端到端三维重建模型对于快速获取三维勘探数据的重要意义。我们复现了这一领域的前沿工作——VGGT（Visual Geometry Grounded Transformer），并对真实的高速公路图片进行了三维数据解析重建
+          </p>
+          <p>  
+            在任务一中，我们基于航道挖掘的勘探图数据，系统开展了三维建模与高程分析，通过数据驱动的方式解析了勘探图中的关键图层信息，重点提取了边坡设计所需的坡比参数。以航道线高程为基准高度，构建了多层级几何解析模型，通过空间坐标系转换与级联计算，精确推导了边坡线在立体空间中的Z轴坐标。为验证模型的科学性，我们还开展了多维度可视化分析，通过基于<strong>Delaunay三角剖分</strong>的边坡示意图展示空间结构，二维高程等高线图刻画高程分布规律，形成了完整的空间认知体系。
+          </p>
+          <p>  
+            在任务二中，聚焦高速公路边坡三维建模，以桂林外环高速 B 段边坡为对象。通过简化模型，将路段中心线近似为直线降低复杂度；构建三维空间直角坐标系，明确各轴定义及对应关系；从 CAD 图纸提取二维数据，利用参照点和工程参数，通过特定映射关系将二维坐标转换为三维坐标；采用 Delaunay 三角剖分进行空间插值，生成连续曲面，满足边坡工程分析需求。
+          </p>
+          <p>  
+            基于任务一和任务二的结果，我们在任务三中，首先通过读取挖高数据和截面面积数据，计算了土方挖掘的粗略体积，之后通过二重积分与立方堆积体积之差计算出了回填土方体积。在方案规划中，我们首先规范了优化问题的标准形式，之后将问题拆解为CVRP问题（带容量约束的车辆路径问题）和聚类参数与车辆数选择问题两个子问题。在处理CVRP问题时，我们采用<strong>蚁群算法</strong>对于每个类别的待挖掘区域进行最优方案求解。对于聚类参数选择和车辆数量处理这一问题，我们采用<strong>粒子群算法</strong>，将构造好的CVRP问题的求解器作为粒子群算法的适应度计算接口，进而实现全局优化，确定了对应的聚类选择参数和车辆数量。实验结果表明，当挖掘机数量为27辆，装卸点数为14，河道开挖得到最优解，时间和成本分别为447.66小时和471,984元。当挖掘机数量为25辆，装卸点数为10，边坡修建得到最优解，时间和成本分别为259.36小时和210,420.63元。
+          </p>
+          <p>  
+            最后，我们还对本问题进行了进一步探索。我们从计算机视觉的角度出发，探讨了端到端三维重建模型对于快速获取三维勘探数据的重要意义。我们复现了这一领域的前沿工作——VGGT（Visual Geometry Grounded Transformer），并对真实的高速公路图片进行了三维数据解析重建
           </p>
         </div>
       </div>
@@ -167,97 +171,202 @@
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/挖方区域分析11_00.png" alt="挖方区域分析"/>
         <h2 class="subtitle has-text-centered">
-          First image description.
+          挖方区域初步分析图
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/挖方区域分析111111_00.png" alt="挖方区域详细分析"/>
         <h2 class="subtitle has-text-centered">
-          Second image description.
+          挖方区域详细分析图
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/最佳路径_时间286.22_代价53384.51_加权26835.36_聚类1_00.png" alt="路径规划结果"/>
         <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
+          规划路径：时间286.22，代价53384.51，聚类1
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/最佳路径_时间288.12_代价53383.75_加权26835.94_聚类1_00.png" alt="路径规划结果"/>
+        <h2 class="subtitle has-text-centered">
+          规划路径：时间288.12，代价53383.75，聚类1
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/最佳路径_时间251.11_代价54080.30_加权27165.71_聚类2_00.png" alt="路径规划结果"/>
+        <h2 class="subtitle has-text-centered">
+          规划路径：时间251.11，代价54080.30，聚类2
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/最佳路径_时间23.19_代价3652.36_加权1837.78_聚类2_00.png" alt="路径规划结果"/>
+        <h2 class="subtitle has-text-centered">
+          规划路径：时间23.19，代价3652.36，聚类2
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/最佳路径_时间21.65_代价3444.69_加权1733.17_聚类3_00.png" alt="路径规划结果"/>
+        <h2 class="subtitle has-text-centered">
+          规划路径：时间21.65，代价3444.69，聚类3
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/最佳路径_时间65.00_代价15139.85_加权7602.43_聚类3_00.png" alt="路径规划结果"/>
+        <h2 class="subtitle has-text-centered">
+          规划路径：时间65.00，代价15139.85，聚类3
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/最佳路径_时间171.13_代价31176.29_加权15673.71_聚类3_00.png" alt="路径规划结果"/>
+        <h2 class="subtitle has-text-centered">
+          规划路径：时间171.13，代价31176.29，聚类3
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/最佳路径_时间97.92_代价15599.23_加权7848.58_聚类4_00.png" alt="路径规划结果"/>
+        <h2 class="subtitle has-text-centered">
+          规划路径：时间97.92，代价15599.23，聚类4
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/最佳路径_时间213.58_代价48163.16_加权24188.37_聚类4_00.png" alt="路径规划结果"/>
+        <h2 class="subtitle has-text-centered">
+          规划路径：时间213.58，代价48163.16，聚类4
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/最佳路径_时间0.31_代价49.03_加权24.67_聚类5_00.png" alt="路径规划结果"/>
+        <h2 class="subtitle has-text-centered">
+          规划路径：时间0.31，代价49.03，聚类5
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/最佳路径_时间19.17_代价3066.74_加权1542.95_聚类5_00.png" alt="路径规划结果"/>
+        <h2 class="subtitle has-text-centered">
+          规划路径：时间19.17，代价3066.74, 聚类5
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/最佳路径_时间122.18_代价28922.10_加权14522.14_聚类6_00.png" alt="路径规划结果"/>
+        <h2 class="subtitle has-text-centered">
+          规划路径：时间122.18，代价28922.10，聚类6
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/最佳路径_时间125.47_代价23826.68_加权11976.07_聚类6_00.png" alt="路径规划结果"/>
+        <h2 class="subtitle has-text-centered">
+          规划路径：时间125.47，代价23826.68，聚类6
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/最佳路径_时间115.77_代价27815.70_加权13965.74_聚类7_00.png" alt="路径规划结果"/>
+        <h2 class="subtitle has-text-centered">
+          规划路径：时间115.77，代价27815.70，聚类7
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/最佳路径_时间285.78_代价49426.60_加权24856.19_聚类7_00.png" alt="路径规划结果"/>
+        <h2 class="subtitle has-text-centered">
+          规划路径：时间285.78，代价49426.60，聚类7
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/最佳路径_时间11.57_代价1850.91_加权931.24_聚类8_00.png" alt="路径规划结果"/>
+        <h2 class="subtitle has-text-centered">
+          规划路径：时间11.57，代价1850.91，聚类8
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/最佳路径_时间447.66_代价77892.81_加权39715.24_聚类8_00.png" alt="路径规划结果"/>
+        <h2 class="subtitle has-text-centered">
+          规划路径：时间447.66，代价77892.81，聚类8
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/最佳路径_时间33.53_代价5522.48_加权2778.00_聚类9_00.png" alt="路径规划结果"/>
+        <h2 class="subtitle has-text-centered">
+          规划路径：时间33.53，代价5522.48, 聚类9
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/最佳路径_时间324.04_代价59309.03_加权29816.54_聚类9_00.png" alt="路径规划结果"/>
+        <h2 class="subtitle has-text-centered">
+          规划路径：时间324.04，代价59309.03，聚类9
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/最佳路径_时间48.34_代价7697.75_加权3873.05_聚类10_00.png" alt="路径规划结果"/>
+        <h2 class="subtitle has-text-centered">
+          规划路径：时间48.34，代价7697.75，聚类10
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/最佳路径_时间300.33_代价55595.04_加权27947.69_聚类11_00.png" alt="路径规划结果"/>
+        <h2 class="subtitle has-text-centered">
+          规划路径：时间300.33，代价55595.04，聚类11
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/最佳路径_时间67.42_代价10683.98_加权5375.70_聚类12_00.png" alt="路径规划结果"/>
+        <h2 class="subtitle has-text-centered">
+          规划路径：时间67.42，代价10683.98，聚类12
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/最佳路径_时间135.00_代价25357.29_加权12746.14_聚类13_00.png" alt="路径规划结果"/>
+        <h2 class="subtitle has-text-centered">
+          规划路径：时间135.00，代价25357.29，聚类13
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/最佳路径_时间98.73_代价19680.10_加权9889.42_聚类14_00.png" alt="路径规划结果"/>
+        <h2 class="subtitle has-text-centered">
+          规划路径：时间98.73，代价19680.10，聚类14
+        </h2>
+      </div>
     </div>
   </div>
-</div>
 </div>
 </section>
 <!-- End image carousel -->
 
 
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
+<!-- Image carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
       <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
+       <div class="item">
+        <img src="static/images/三维坡面图_00.png" alt="三维坡面图"/>
+        <h2 class="subtitle has-text-centered">
+          三维坡面图
+        </h2>
       </div>
-    </div>
+      <div class="item">
+        <img src="static/images/山体边坡等高线_00.png" alt="山体边坡等高线"/>
+        <h2 class="subtitle has-text-centered">
+          山体边坡等高线
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/山体边坡三维_00.png" alt="山体边坡三维"/>
+        <h2 class="subtitle has-text-centered">
+          山体边坡三维图
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/山体等高线3_00.png" alt="山体等高线"/>
+        <h2 class="subtitle has-text-centered">
+          山体等高线
+        </h2>
+      </div>
+      
   </div>
+</div>
 </section>
-<!-- End video carousel -->
-
-
+<!-- End image carousel -->
 
 
 
@@ -266,9 +375,9 @@
 <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title">Poster</h2>
+      <h2 class="title">海报</h2>
 
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+      <iframe  src="static/pdfs/poster.pdf" width="100%" height="500">
           </iframe>
         
       </div>
@@ -281,7 +390,12 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@inproceedings{IMMC25140846,
+  author = {金莫迪,匡航逸,刘华彬,张铭洲},
+  title = {从三维数据到调度方案：面向土方挖掘的调度方案规划算法},
+  booktitle = {SJMMA2025},
+  year = {2025}
+}</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
@@ -294,7 +408,7 @@
         <div class="content">
 
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
             You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
